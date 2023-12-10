@@ -1,0 +1,35 @@
+$lightGrey: #adadad
+$white: #ffffff
+$gold: #c59d5f
+
+.menu-item
+    display: grid
+    gap: 1rem 2rem
+    max-width: 25rem
+    background-color: rgb(251, 223, 186)
+    padding: 10px
+    border: 0.25rem solid $gold
+    border-radius: 0.5rem
+    .photo
+        object-fit: cover
+        height: 175px
+        border: 0.25rem solid $gold
+        border-radius: 0.5rem
+    .item-info
+        header
+            display: flex
+            justify-content: space-between
+            border-bottom: 0.5px dotted $lightGrey
+        h4
+            margin-bottom: 0.5rem
+        .price
+            color: $gold
+        .item-text
+            margin-bottom: 0
+            padding-top: 1rem
+
+@media screen and (min-width: 768px)
+    .menu-item
+        grid-template-columns: 225px 1fr
+        gap: 0 1.25rem
+        max-width: 40rem

@@ -1,0 +1,43 @@
+$darkGrey: #393939
+$white: #ffffff
+$gold: #c59d5f
+
+.question
+    margin: 10px
+    background: $white
+    border-radius: 0.5rem
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+    padding: 1.5rem 1.5rem 0 1.5rem
+    margin-bottom: 2rem
+    .question-title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-transform: capitalize
+        padding-bottom: 1rem
+        .question-btn
+            font-size: 1.5rem
+            background: transparent
+            border-color: transparent
+            cursor: pointer
+            color: $gold
+            transition: all 0.3s linear
+            .minus-icon
+                display: none
+            .plus-icon
+                display: inline
+            &:hover
+                transform: rotate(90deg)
+    .question-text
+        display: none
+        padding: 1rem 0 1.5rem 0
+        border-top: 1px solid rgba(0, 0, 0, 0.2)
+    p
+        margin-bottom: 0
+        color: $darkGrey
+    &.show-text
+        display: block
+        .minus-icon
+            display: inline
+        .plus-icon
+            display: none
